@@ -1,0 +1,67 @@
+html {
+    background-color: lightblue;
+}
+
+h1 {
+    color: rgba(133,13,202,.7);
+    margin: 0;
+}
+
+p {
+    font-family: Tahoma, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+}
+
+a:link, a:visited {
+    color:rgba(250,84,122,1);
+}
+
+a:hover {
+    border-top: 2px solid rgba(250,84,122,1);
+}
+
+.links {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgba(250,84,122,1);
+}
+
+.intro-header {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.image {
+    text-align: center;
+}
+
+.intro-list {
+    font-size: 17px;
+    padding-left: 5vw;
+}
+
+.list {
+    white-space: nowrap;
+    line-height: .5em;
+    font-size: 15px;
+}
+
+.list > p {
+    display: inline-block;
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+}
