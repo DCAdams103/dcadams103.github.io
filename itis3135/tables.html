@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <!-- Title of the page aka what shows up in the tab -->
+    <title>
+        Dylan Adams ITIS 3135 Tables
+    </title>
+    
+    <!-- Imports tables.css to allow us to use it's styles -->
+    <head>
+        <link rel='stylesheet' href='styles/tables.css'>
+    </head>
+
+    <!-- Header with the activity name-->
+    <main>
+
+        <h2>Activity #2 - Tables</h2>
+
+        <!-- Links that will take you to their specific section of the page -->
+        <div class='links'>
+            <p style='margin:5px;'>
+                <a href='#tabular'>Tabular Data</a> 
+                ||
+                <a href='#simple'>Simple Table</a>
+                ||
+                <a href='#complex'>Complex Table</a>
+                ||
+                <a href='#contact'>Contact</a>
+            </p>
+        </div>
+
+    </main>
+
+    <h3 id='tabular'>My Tabular Data</h3>
+
+    <!-- Ordered List for the Tabular Data -->
+    <ol>
+        <li>Hashirama Senju - lordfirst@hiddenleafhokage.com - 20+</li>
+        <li>Tobirama Senju - lordsecond@hiddenleafhokage.com - 15+</li>
+        <li>Hiruzen Sarutobi - lordthird@hiddenleafhokage.com - 60+</li>
+        <li>Minato Namikaze - lordfourth@hiddenleafhokage.com - 1+</li>
+        <li>Tsunade - lordfifth@hiddenleafhokage.com - 5+</li>
+        <li>Kakashi Hatake - lordsixth@hiddenleafhokage.com 13+</li>
+        <li>Naruto Uzumaki - lordseventh@hiddenleafhokage.com 4+</li>
+
+    </ol>
+
+    <h3>Hokage Data in Simple Table</h3>
+
+    <!-- Simple Table with only 3 columns and no CSS -->
+    <table id='simple' class='basic'>
+
+        <caption>All the Hidden Leaf Hokages: </caption>
+
+        <!-- A row of data -->
+        <tr>
+            <!-- The headers/title of each column -->
+            <th scope='col'>Name</th>
+            <th scope='col'>Email</th>
+            <th scope='col'>Estimated Service in Years</th>
+        </tr>
+
+        <tr>
+            <!-- A data element inside of a row element -->
+            <td>Hashirama Senju</td>
+            <td>lordfirst@hiddenleafhokage.com</td>
+            <td>20+</td>
+        </tr>
+
+        <tr>
+            <td>Tobirama Senju</td>
+            <td>lordsecond@hiddenleafhokage.com</td>
+            <td>15+</td>
+        </tr>
+
+        <tr>
+            <td>Hiruzen Sarutobi</td>
+            <td>lordthird@hiddenleafhokage.com</td>
+            <td>60+</td>
+        </tr>
+
+        <tr>
+            <td>Minato Namikaze</td>
+            <td>lordfourth@hiddenleafhokage.com</td>
+            <td>1+</td>
+        </tr>
+
+        <tr>
+            <td>Tsuande</td>
+            <td>lordfifth@hiddenleafhokage.com</td>
+            <td>5+</td>
+        </tr>
+
+        <tr>
+            <td>Kakashi Hatake</td>
+            <td>lordsixth@hiddenleafhokage.com</td>
+            <td>13+</td>
+        </tr>
+
+        <tr>
+            <td>Naruto Uzumaki</td>
+            <td>lordseventh@hiddenleafhokage.com</td>
+            <td>4+</td>
+        </tr>
+
+    </table>
+
+    <h3>Hokage Data in Complex Table</h3>
+
+    <!-- A complex table inside of a figure element -->
+    <figure>
+        <table id='complex' class='complex'>
+
+            <caption>All the Hidden Leaf Hokages: </caption>
+
+            <tr>
+                <!-- The header element has a scope to allow for better accessibility -->
+                <th scope='col'>Classification: Sage, Jinchuriki, or Sensor Type</th>
+                <th scope='col'>Name</th>
+                <th scope='col'>Email</th>
+                <th scope='col'>Estimated Service in Years</th>
+                <th scope='col'>Estimated Salary</th>
+            </tr>
+    
+            <tr>
+                <td>Sage</td>
+                <td>Hashirama Senju</td>
+                <td>lordfirst@hiddenleafhokage.com</td>
+                <td>20+</td>
+                <td>N/A</td>
+            </tr>
+    
+            <tr>
+                <!-- rowspan='2' takes up two rows of space -->
+                <td rowspan="2">Sensor Type</td>
+                <td>Tobirama Senju</td>
+                <td>lordsecond@hiddenleafhokage.com</td>
+                <td>15+</td>
+                <td>N/A</td>
+            </tr>
+    
+            <tr>
+                <td>Hiruzen Sarutobi</td>
+                <td>lordthird@hiddenleafhokage.com</td>
+                <td>60+</td>
+                <td>N/A</td>
+            </tr>
+    
+            <tr>
+                <td>Jinchuriki, Sage, Sensor Type</td>
+                <td>Minato Namikaze</td>
+                <td>lordfourth@hiddenleafhokage.com</td>
+                <td>1+</td>
+                <td>N/A</td>
+            </tr>
+    
+            <tr>
+                <td>Sage</td>
+                <td>Tsuande</td>
+                <td>lordfifth@hiddenleafhokage.com</td>
+                <td>5+</td>
+                <td>N/A</td>
+            </tr>
+    
+            <tr>
+                <!-- Empty on purpose -- no classification -->
+                <td></td>
+                <td>Kakashi Hatake</td>
+                <td>lordsixth@hiddenleafhokage.com</td>
+                <td>13+</td>
+                <td>N/A</td>
+            </tr>
+    
+            <tr>
+                <td>Jinchuriki, Sage, Sensor Type</td>
+                <td>Naruto Uzumaki</td>
+                <td>lordseventh@hiddenleafhokage.com</td>
+                <td>4+</td>
+                <td>N/A</td>
+            </tr>
+
+            <!-- Last row stretching over the length of 3 columns -->
+            <tr>
+                <th colspan="3"> Total Years of Service: 118+ years</th>
+            </tr>
+    
+        </table>
+        
+        <figcaption>Information about each Hidden Leaf Hokage. Hokage don't really have a salary.</figcaption>
+
+    </figure>
+
+    <!-- Links, each one opens in a new tab thanks to target='_blank' -->
+    <div class='links' id='contact'>
+        <p>
+            <a href='https://www.charlotte.edu' target='_blank'>Charlotte.edu</a>
+            ||
+            <a href='https://github.com/DCAdams103' target='_blank'>Github</a>
+            ||
+            <a href='https://dcadams103.github.io/' target='_blank'>Github.io</a>
+            ||
+            <a href='https://dcadams103.github.io/itis3135/' target='_blank'>ITIS 3135 Github Pages</a>
+            ||
+            <a href='https://www.freecodecamp.org/dadams67' target='_blank'>freeCodeCamp</a>
+            ||
+            <a href='https://www.linkedin.com/in/dylan-c-adams/' target='_blank'>LinkedIn</a>
+            ||
+            <a href='https://bit.ly/3nWSq8m' target='_blank'>Portfolio</a>
+        </p>
+    </div>
+
+    <!-- Footer of the page -->
+    <div class='footer'>
+
+        <h2> Built by Adams Studio</h2>
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fdadams67%2Fitis3135%2Ftables.html" target="_blank">
+            <img src='images/button-valid-html5.gif' alt='Valid HTML 5'>
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fdadams67%2Fitis3135%2Ftables.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+            <img src='images/button-valid-css.gif' alt='Valid CSS'>
+        </a>
+
+    </div>
+
+</html>
