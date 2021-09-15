@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    
+    <head>
+        
+        <!-- Imports tables.css to allow us to use it's styles -->
+        <link rel='stylesheet' href='styles/forms.css'>
+
+        <!-- Title of the page aka what shows up in the tab -->
+        <title> Dylan Adams ITIS 3135 Forms </title>
+        
+    </head>
+
+    <!-- Header with the activity name-->
+    <h3>Activity #3 - Forms</h3>
+
+    <!-- Links to other pages -->
+    <div class='links' id='contact' style='padding-top:0;'>
+        <p>
+            <a href='https://webpages.uncc.edu/dadams67/itis3135/introduction.html'>Introduction</a>
+            ||
+            <a href='https://webpages.uncc.edu/dadams67/itis3135/tables.html'>Tables</a>
+        </p>
+    </div>
+
+    <h2>Sign up for Adams Studio's Weekly Newsletter!</h2>
+
+    <div class='container'>
+
+        <form class='form' action='#'>
+
+            <!-- Textbox Inputs -->
+            <div>
+                <label style='display:block;'>
+                    Enter your First Name: 
+                    <input class='field' type='text' size='30' required /> 
+                </label>
+                
+                <label style='display:block;'>
+                    Enter your Last Name: 
+                    <input class='field' type='text' size='30' required /> 
+                </label>
+               
+                <label style='display:block;'>
+                    Enter your email address: 
+                    <input class='field' type='email' name='email' size='50' required />
+                </label>
+                
+                <label style='display:block;'>
+                    Enter your phone number:
+                    <input class='field' type='number' />
+                </label>
+                
+            </div>
+
+            <!-- Question Header -->
+            <h3>What is your gender?</h3>
+            
+            <!-- Radio Button Inputs -->
+            
+            <label class='radio' for='male'>
+                <input type='radio' id='male' name='gender' value='male' />
+                Male
+            </label>
+            
+            <label class='radio' for='female'>
+                <input type='radio' id='female' name='gender' value='female' />
+                Female
+            </label>
+
+            
+            <label class='radio' for='other'>
+                <input type='radio' id='other' name='gender' value='other'/>
+                Other
+            </label>
+
+            
+            <label class='radio' for='prefer'>
+                <input type='radio' id='prefer' name='gender' value='prefer' />
+                Prefer not to say
+            </label>
+
+            <br/>
+
+            <!-- Select Inputs -->
+            <label>Where did you hear about us?</label>
+
+            <select name='places' id='places'>
+                <option value='select'>--Select Option--</option>
+                <option value='school'>Through School</option>
+                <option value='google'>Google Advertisements</option>
+                <option value='insta'>Instagram</option>
+                <option value='facebook'>Facebook</option>
+                <option value='other'>Other</option>
+            </select>
+
+            <!-- Checkbox Input -->
+            
+            <label class='checkbox' for='consent'>
+                <input type='checkbox' id='consent' name='consent' required>
+                I agree to receiving weekly newsletter through email.
+            </label>
+
+            <input class='submit' type='submit' value='Submit'>
+
+        </form>
+
+    </div>
+    
+
+    <!-- Links, each one opens in a new tab thanks to target='_blank' -->
+    <div class='links' id='contact'>
+        <p>
+            <a href='https://www.charlotte.edu' target='_blank'>Charlotte.edu</a>
+            ||
+            <a href='https://github.com/DCAdams103' target='_blank'>Github</a>
+            ||
+            <a href='https://dcadams103.github.io/' target='_blank'>Github.io</a>
+            ||
+            <a href='https://dcadams103.github.io/itis3135/' target='_blank'>ITIS 3135 Github Pages</a>
+            ||
+            <a href='https://www.freecodecamp.org/dadams67' target='_blank'>freeCodeCamp</a>
+            ||
+            <a href='https://www.linkedin.com/in/dylan-c-adams/' target='_blank'>LinkedIn</a>
+            ||
+            <a href='https://bit.ly/3nWSq8m' target='_blank'>Portfolio</a>
+        </p>
+    </div>
+
+    <!-- Footer of the page -->
+    <div class='footer'>
+
+        <h2> Built by Adams Studio</h2>
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fdadams67%2Fitis3135%2Fforms.html" target="_blank">
+            <img src='images/button-valid-html5.gif' alt='Valid HTML 5'>
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fdadams67%2Fitis3135%2Fforms.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+            <img src='images/button-valid-css.gif' alt='Valid CSS'>
+        </a>
+
+    </div>
+
+</html>
