@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <!-- Allows us to use the default.css styles -->
+    <head>
+        <!-- The text that shows up in the tab -->
+        <title>Dylan Adams ITIS 3135 Scripts</title>
+
+        <link rel='stylesheet' href='styles/first-scripts.css'>
+        <script src='scripts/interaction.js'></script>
+        
+    </head>
+
+    <!-- Buttons that perform actions -->
+    <body onLoad="questions()">
+
+        <!-- Title of page -->
+        <h1>Scripts</h1>
+
+        <!-- Warning if javascript is disabled -->
+        <h2>
+            <noscript>To get the most out of this website, please enable Javascript.</noscript>
+        </h2>
+
+        <!-- Links to other pages -->
+        <div class='links' id='contact' style='padding-top:0;'>
+            <p>
+                <a href='https://webpages.uncc.edu/dadams67/itis3135/introduction.html'>Introduction</a>
+                ||
+                <a href='https://webpages.uncc.edu/dadams67/itis3135/tables.html'>Tables</a>
+                ||
+                <a href='https://webpages.uncc.edu/dadams67/itis3135/forms.html'>Forms</a>
+                ||
+                <a href='https://webpages.uncc.edu/dadams67/itis3135/website_evaluations.html'>Evaluations</a>
+            </p>
+        </div>
+
+        <!-- Today's date and welcoming the user -->
+        <h2 id='desc'></h2>
+        <br/>
+        <h2 id='intro'></h2>
+        <br/><br/>
+        
+        <div class='script-buttons'>
+
+            <!-- Change the users name -->
+            <button onclick='changeName()'>Change my name!</button>
+            <br/><br/>
+
+            <!-- Generates a random number -->
+            <button onclick="ranNum()">Generate a random number</button>
+            <p id='randnum'></p>
+
+            <!-- Reverse the users name -->
+            <button onclick='reverseName()'>Reverse my name!</button>
+            <p id='reversed'></p>
+
+            <!-- Show one week from today -->
+            <button onclick='oneWeekFromToday()'>Show one week from today!</button>
+            <p id='week'></p>
+
+            <!-- Change the color of the button -->
+            <button id='color' onclick='randomColor()' >Click me to change my color!</button>
+            <br/><br/>
+
+        </div>
+
+        <!-- Footer of the page -->
+        <footer>
+            <div class='footer'>
+
+                <h2> Built by Adams Studio</h2>
+                <br/>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fdadams67%2Fitis3135%2Ffirst-scripts.html" target="_blank">
+                    <img src='images/button-valid-html5.gif' alt='Valid HTML 5'>
+                </a>
+
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fdadams67%2Fitis3135%2Ffirst-scripts.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                    <img src='images/button-valid-css.gif' alt='Valid CSS'>
+                </a>
+
+            </div>
+        </footer>
+
+    </body>
+
+</html>
