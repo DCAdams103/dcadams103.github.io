@@ -33,95 +33,99 @@
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/first-scripts.html'>Scripts</a>
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/polygon.html'>Polygon</a>
+                    ||
+                    <a href='https://webpages.uncc.edu/dadams67/itis3135/calculator_try.html'>Calculator</a>
                 </p>
             </div>
 
         </header>
 
-        <h2>Sign up for Adams Studio's Weekly Newsletter!</h2>
+        <main>
+            <h2>Sign up for Adams Studio's Weekly Newsletter!</h2>
 
-        <div class='container'>
-
-            <!-- Form element that has all labels and inputs inside it. -->
-            <form class='form' action='#'>
-
-                <!-- Textbox Inputs -->
-                <div>
-                    <label style='display:block;'>
-                        Enter your First Name: 
-                        <input class='field' type='text' size='30' placeholder='First Name' required /> 
+            <div class='container'>
+    
+                <!-- Form element that has all labels and inputs inside it. -->
+                <form class='form' action='#'>
+    
+                    <!-- Textbox Inputs -->
+                    <div>
+                        <label style='display:block;'>
+                            Enter your First Name: 
+                            <input class='field' type='text' size='30' placeholder='First Name' required /> 
+                        </label>
+                        
+                        <label style='display:block;'>
+                            Enter your Last Name: 
+                            <input class='field' type='text' size='30' placeholder='Last Name' required /> 
+                        </label>
+                    
+                        <label style='display:block;'>
+                            Enter your email address: 
+                            <input class='field' type='email' name='email' size='50' placeholder='Email' required />
+                        </label>
+                        
+                        <label style='display:block;'>
+                            Enter your phone number:
+                            <input class='field' type='number' placeholder='Phone Number' />
+                        </label>
+                        
+                    </div>
+    
+                    <!-- Question Header -->
+                    <h3>What is your gender?</h3>
+                    
+                    <!-- Radio Button Inputs -->
+                    
+                    <label class='radio' for='male'>
+                        <input type='radio' id='male' name='gender' value='male' />
+                        Male
                     </label>
                     
-                    <label style='display:block;'>
-                        Enter your Last Name: 
-                        <input class='field' type='text' size='30' placeholder='Last Name' required /> 
+                    <label class='radio' for='female'>
+                        <input type='radio' id='female' name='gender' value='female' />
+                        Female
                     </label>
-                
-                    <label style='display:block;'>
-                        Enter your email address: 
-                        <input class='field' type='email' name='email' size='50' placeholder='Email' required />
-                    </label>
+    
                     
-                    <label style='display:block;'>
-                        Enter your phone number:
-                        <input class='field' type='number' placeholder='Phone Number' />
+                    <label class='radio' for='other'>
+                        <input type='radio' id='other' name='gender' value='other'/>
+                        Other
                     </label>
+    
                     
-                </div>
-
-                <!-- Question Header -->
-                <h3>What is your gender?</h3>
-                
-                <!-- Radio Button Inputs -->
-                
-                <label class='radio' for='male'>
-                    <input type='radio' id='male' name='gender' value='male' />
-                    Male
-                </label>
-                
-                <label class='radio' for='female'>
-                    <input type='radio' id='female' name='gender' value='female' />
-                    Female
-                </label>
-
-                
-                <label class='radio' for='other'>
-                    <input type='radio' id='other' name='gender' value='other'/>
-                    Other
-                </label>
-
-                
-                <label class='radio' for='prefer'>
-                    <input type='radio' id='prefer' name='gender' value='prefer' />
-                    Prefer not to say
-                </label>
-
-                <br/>
-
-                <!-- Select Inputs -->
-                <label>Where did you hear about us?</label>
-
-                <select name='places' id='places'>
-                    <option value='select'>--Select Option--</option>
-                    <option value='school'>Through School</option>
-                    <option value='google'>Google Advertisements</option>
-                    <option value='insta'>Instagram</option>
-                    <option value='facebook'>Facebook</option>
-                    <option value='other'>Other</option>
-                </select>
-
-                <!-- Checkbox Input -->
-                
-                <label class='checkbox' for='consent'>
-                    <input type='checkbox' id='consent' name='consent' required>
-                    I agree to receiving weekly newsletter through email.
-                </label>
-
-                <input class='submit' type='submit' value='Submit'>
-
-            </form>
-
-        </div>
+                    <label class='radio' for='prefer'>
+                        <input type='radio' id='prefer' name='gender' value='prefer' />
+                        Prefer not to say
+                    </label>
+    
+                    <br/>
+    
+                    <!-- Select Inputs -->
+                    <label>Where did you hear about us?</label>
+    
+                    <select name='places' id='places'>
+                        <option value='select'>--Select Option--</option>
+                        <option value='school'>Through School</option>
+                        <option value='google'>Google Advertisements</option>
+                        <option value='insta'>Instagram</option>
+                        <option value='facebook'>Facebook</option>
+                        <option value='other'>Other</option>
+                    </select>
+    
+                    <!-- Checkbox Input -->
+                    
+                    <label class='checkbox' for='consent'>
+                        <input type='checkbox' id='consent' name='consent' required>
+                        I agree to receiving weekly newsletter through email.
+                    </label>
+    
+                    <input class='submit' type='submit' value='Submit'>
+    
+                </form>
+    
+            </div>
+        </main>
 
         <!-- Footer of the page -->
         <footer>

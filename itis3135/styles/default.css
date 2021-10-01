@@ -179,3 +179,50 @@ ul {
     list-style-position: inside;
     color: rgba(133,13,202,.7);
 }
+
+/* -------------- Calculator CSS -------------- */
+
+.calc-box {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    max-width: 20%;
+    min-height: 55vh;
+    background-image: linear-gradient(rgb(161, 161, 161), rgb(155,155,155));
+}
+
+.calc-results {
+    margin: 5%;
+    width: 90%;
+    height: 50px;
+    background-image: linear-gradient(rgb(104, 104, 104), rgb(97, 97, 97));
+}
+
+.calc-results-text {
+    float: right;
+    margin-right: 5%;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+.clear {
+    min-width: 70%;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.divide {
+    height: 50px;
+    width: 50px;
+}
+
+.number {
+    height: 50px;
+    width: 50px;
+    margin: 5%;
+}

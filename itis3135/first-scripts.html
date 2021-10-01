@@ -40,40 +40,45 @@
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/website_evaluations.html'>Evaluations</a>
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/polygon.html'>Polygon</a>
+                    ||
+                    <a href='https://webpages.uncc.edu/dadams67/itis3135/calculator_try.html'>Calculator</a>
                 </p>
             </div>
 
         </header>
 
-        <!-- Today's date and welcoming the user -->
-        <h2 id='desc'></h2>
-        <br/>
-        <h2 id='intro'></h2>
-        <br/><br/>
+        <main>
+            <!-- Today's date and welcoming the user -->
+            <h2 id='desc'></h2>
+            <br/>
+            <h2 id='intro'></h2>
+            <br/><br/>
+
+            <div class='bottom-buttons'>
+
+                <!-- Change the users name -->
+                <button onclick='changeName()'>Change my name!</button>
+                <br/><br/>
+
+                <!-- Generates a random number -->
+                <button onclick="ranNum()">Generate a random number</button>
+                <p id='randnum'></p>
+
+                <!-- Reverse the users name -->
+                <button onclick='reverseName()'>Reverse my name!</button>
+                <p id='reversed'></p>
+
+                <!-- Show one week from today -->
+                <button onclick='oneWeekFromToday()'>Show one week from today!</button>
+                <p id='week'></p>
+
+                <!-- Change the color of the button -->
+                <button id='color' onclick='randomColor()' >Click me to change my color!</button>
+                <br/><br/>
+
+            </div>
+        </main>
         
-        <div class='bottom-buttons'>
-
-            <!-- Change the users name -->
-            <button onclick='changeName()'>Change my name!</button>
-            <br/><br/>
-
-            <!-- Generates a random number -->
-            <button onclick="ranNum()">Generate a random number</button>
-            <p id='randnum'></p>
-
-            <!-- Reverse the users name -->
-            <button onclick='reverseName()'>Reverse my name!</button>
-            <p id='reversed'></p>
-
-            <!-- Show one week from today -->
-            <button onclick='oneWeekFromToday()'>Show one week from today!</button>
-            <p id='week'></p>
-
-            <!-- Change the color of the button -->
-            <button id='color' onclick='randomColor()' >Click me to change my color!</button>
-            <br/><br/>
-
-        </div>
 
         <!-- Footer of the page -->
         <footer class='bottom-footer'>
