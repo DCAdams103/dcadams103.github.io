@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 
 <html lang='en' class='extra-space-html'>
-
     <!-- Allows us to use the default.css styles -->
     <head>
         <!-- The text that shows up in the tab -->
-        <title>Dylan Adams ITIS 3135 Scripts</title>
+        <title>Dylan Adams ITIS 3135 Polygons</title>
 
         <link rel='stylesheet' href='styles/default.css'>
-        <script src='scripts/interaction.js'></script>
+        <script src='scripts/polygon.js'></script>
         
     </head>
 
     <!-- Buttons that perform actions -->
-    <body onLoad="questions()">
-        
-        
+    <body onLoad="getShape()">
+
         <header>
-            
+
             <!-- Title of page -->
-            <h1>Scripts</h1>
+            <h1>Dylan Adams - ITIS 3135</h1>
 
             <!-- Warning if javascript is disabled -->
             <h2>
@@ -39,41 +37,28 @@
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/website_evaluations.html'>Evaluations</a>
                     ||
-                    <a href='https://webpages.uncc.edu/dadams67/itis3135/polygon.html'>Polygon</a>
+                    <a href='https://webpages.uncc.edu/dadams67/itis3135/first-scripts.html'>Scripts</a>
                 </p>
             </div>
 
         </header>
 
-        <!-- Today's date and welcoming the user -->
-        <h2 id='desc'></h2>
-        <br/>
-        <h2 id='intro'></h2>
         <br/><br/>
-        
-        <div class='bottom-buttons'>
 
-            <!-- Change the users name -->
-            <button onclick='changeName()'>Change my name!</button>
-            <br/><br/>
+        <!-- Main content -->
+        <main>
 
-            <!-- Generates a random number -->
-            <button onclick="ranNum()">Generate a random number</button>
-            <p id='randnum'></p>
+            <h2>Name the Polygon</h2>
 
-            <!-- Reverse the users name -->
-            <button onclick='reverseName()'>Reverse my name!</button>
-            <p id='reversed'></p>
+            <label for='polygon'>Name another polygon!</label>
+            
+            <!-- Calls the getShape() function again to prompt the user for a number. -->
+            <button onclick='getShape()' id='polygon'>Type another number!</button>
 
-            <!-- Show one week from today -->
-            <button onclick='oneWeekFromToday()'>Show one week from today!</button>
-            <p id='week'></p>
+            <p id='polygon-result'></p>
 
-            <!-- Change the color of the button -->
-            <button id='color' onclick='randomColor()' >Click me to change my color!</button>
-            <br/><br/>
+        </main>
 
-        </div>
 
         <!-- Footer of the page -->
         <footer class='bottom-footer'>
@@ -111,5 +96,4 @@
         </footer>
 
     </body>
-
 </html>
