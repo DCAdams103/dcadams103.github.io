@@ -96,6 +96,10 @@ a:hover {
     justify-content: center;
 }
 
+.textLabel {
+    display: block;
+}
+
 .form {
     text-align: left;
 }
@@ -103,6 +107,21 @@ a:hover {
 .field {
     background-color: rgba(217, 151, 255, 0.7);
     margin: .5vh;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: 1 !important;
+}
+
+:-moz-placeholder {
+    color: black;
+    opacity: 1 !important;
+}
+
+::-moz-placeholder {
+    color: black;
+    opacity: 1 !important;
 }
 
 .radio {
@@ -225,4 +244,32 @@ ul {
     height: 50px;
     width: 50px;
     margin: 5%;
+}
+
+/* -------------- Arrays CSS -------------- */
+
+.arrays-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrays-button {
+    display: flex;
+    min-width: 10vw;
+    margin: .5%;
+}
+
+.arrays-main a {
+    text-align: center;
+}
+
+/*  -------------- Project-Design CSS  -------------- */
+.project-ul {
+    color: black;
+} 
+
+.project-ul li {
+    margin: .5%;
 }

@@ -5,17 +5,24 @@
     <!-- Allows us to use the default.css styles -->
     <head>
         <!-- The text that shows up in the tab -->
-        <title>Dylan Adams ITIS 3135 Evaluations</title>
+        <title>Dylan Adams ITIS 3135 Arrays</title>
 
         <link rel='stylesheet' href='styles/default.css'>
+        <script src='scripts/arrays.js'></script>
+        
     </head>
 
     <body>
 
-        <!-- Title of page -->
         <header>
-            <h1>Website Evaluations</h1>
-            
+
+            <!-- Title of page -->
+            <h1>Dylan Adams - ITIS 3135 - Arrays</h1>
+
+            <!-- Warning if javascript is disabled -->
+            <h2>
+                <noscript>To get the most out of this website, please enable Javascript.</noscript>
+            </h2>
 
             <!-- Links to other pages -->
             <div class='links'>
@@ -28,72 +35,75 @@
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/brand-diabolical-axolotl.html'>Brand</a>
                     ||
+                    <a href='https://webpages.uncc.edu/dadams67/itis3135/website_evaluations.html'>Evaluations</a>
+                    ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/first-scripts.html'>Scripts</a>
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/polygon.html'>Polygon</a>
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/calculator_try.html'>Calculator</a>
                     ||
-                    <a href='https://webpages.uncc.edu/dadams67/itis3135/arrays.html'>Arrays</a>
-                    ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/project-design.html'>Project Design</a>
                 </p>
             </div>
-            
+
         </header>
 
-        <br/>
-
+        <!-- Main content -->
         <main>
-            <section>
 
-                <h2>The crappy website: </h2>
+            <br/> 
 
-                <h3><a href='https://nwokillers.weebly.com/' target='_blank'>Illuminati Exposers</a></h3>
+            <form>
 
-                <p class='description'>From the get-go you can tell this is an odd website, <br/> with it's tiny description in the top corner stating:<br/>
-                "Destroying man made religions and traditions and <br/> exposing the churches lies. Exposing Satan and his NWO"            
-                </p>
+                <label class='textLabel' for='name'>
+                    Person's Name: 
+                    <input autocomplete='off' class='field' type='text' id='name' value='' placeholder="Person's Name">
+                </label>
+                <br/>
 
-                <ul>
-                    <li>C: The contrast for this page is a little off, especially with the title of the page being neon blue.<br/>
-                        Further down the page there is yellow and green text.</li>
-                    <li>R: This pages layout is repetitive, with text being above or beside an image or youtube link.</li>
-                    <li>A: Alignment is off with the images being different sizes, and varies throughout the page.</li>
-                    <li>P: Proximity is good, items are close together, maybe a little too close.</li>
-                </ul>
+                <label class='textLabel' for='salary'>
+                    Person's Salary: 
+                    <input autocomplete='off' class='field' type='number' id='salary' value='' placeholder="Person's Salary">
+                </label>
+                <br/>
 
-            </section>
+            </form>
 
-            <br/><br/>
+            <div class='arrays-main'>
+                <button class='arrays-button' onclick='validateInput()'>Add Salary</button>
+                <button class='arrays-button' onclick='displayResults()'>Display Results</button>
+                <button class='arrays-button' onclick='displaySalary()'>Display Salary</button>
+            </div>
 
-            <section style='text-align: center;'>
+            <br/>
 
-                <h2>The good website: </h2>
+            <h2>Highest and Average Salary: </h2>
+            <p id='results'>Click "Display Results" above to see the highest and average salary.</p>
 
-                <h3><a href='https://nakato.com/' target='_blank'>Nakato Japanese Restaurant and Sushi</a></h3>
+            <table class='complex' id='results_table'>
+                <tr>
+                    <th>Person</th>
+                    <th>Salary</th>
+                </tr>
 
-                <p class='description'>A nice restaurant here in Charlotte. <br/> 
-                    They're specifically a Japanese Steakhouse and Sushi Bar.
-                </p>
+            </table>
 
-                <ul>
-                    <li>C: Contrast throughout the page is good. In the header they gave the<br>
-                        text a colored background to make it easier to read. All the text <br/>
-                        throughout the page is easy to read.
-                    </li>
-                    <li>R: Repetition throughout the page is also good, having sections that stretch<br/>
-                        all the way across the page, and some sections that consist of three columns.
-                    </li>
-                    <li>A: Alignment is also good on this page, everything is centered and easy to see.</li>
-                    <li>P: Proximity is good on this page, everything is evenly spaced and nothing feels cluttered. </li>
-                </ul>
+            <br/>
 
-            </section>
+            <h2>Select specific person: </h2>
+            <p>Choose a person below to see how much their salary is, or add someone by clicking "Add Salary".</p>
+            <form>
+                <select onchange='personSelectChange()' id='person_select'>
+                    <option value='select' disabled selected>-- Add a Person and Salary above --</option>
+                </select>
+            </form>
+
+            <p id='person_select_salary'></p>
 
         </main>
 
-        <br/>
+        <br/><br/>
 
         <!-- Footer of the page -->
         <footer>
@@ -119,6 +129,7 @@
                 </p>
             </div>
 
+            <!-- Validation -->
             <br/>
             <a href="https://validator.w3.org/check?uri=referer" target="_blank">
                 <img src='images/button-valid-html5.gif' alt='Valid HTML 5'>
@@ -129,6 +140,7 @@
             </a>
             
         </footer>
+
     </body>
 
 </html>
