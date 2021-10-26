@@ -1,0 +1,50 @@
+html {
+    background-color: rgb(77, 65, 92);
+    color: white;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+h2 { 
+    font-size: 30px;
+}
+h3 {
+    margin: 0;
+}
+a {
+    color: white;
+}
+a:hover, a:visited { 
+    color: none;
+}
+.bottom-footer { 
+    background-color: rgba(0,0,0,.1);
+    border-radius: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    text-align: center;
+    position: fixed;
+    bottom: 3%;
+    width: 99%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid-container > div {
+    text-align: center;
+}
+.uncc-logo {
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+
+    width: 20%;
+    height: auto;
+    
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
