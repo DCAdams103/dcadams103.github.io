@@ -273,3 +273,22 @@ ul {
 .project-ul li {
     margin: .5%;
 }
+
+/*  -------------- Slideshow CSS  -------------- */
+.slideshow {
+    min-width: 50%;
+    min-height: 50%;
+    background-color:papayawhip;
+}
+
+#picholder > img {
+    max-width: 60%;
+    padding-top: 3%;
+}
+
+#prev, #next {
+    margin-right: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}

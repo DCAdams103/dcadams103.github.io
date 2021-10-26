@@ -5,11 +5,12 @@
     <!-- Allows us to use the default.css styles -->
     <head>
         <!-- The text that shows up in the tab -->
-        <title>Dylan Adams ITIS 3135 Arrays</title>
+        <title>Dylan Adams ITIS 3135 Slideshow</title>
 
         <link rel='stylesheet' href='styles/default.css'>
-        <script src='scripts/arrays.js'></script>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="scripts/slideshow.js"></script>
+
     </head>
 
     <body>
@@ -17,7 +18,7 @@
         <header>
 
             <!-- Title of page -->
-            <h1>Dylan Adams - ITIS 3135 - Arrays</h1>
+            <h1>Dylan Adams - ITIS 3135 - Slideshow</h1>
 
             <!-- Warning if javascript is disabled -->
             <h2>
@@ -41,11 +42,9 @@
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/polygon.html'>Polygon</a>
                     ||
-                    <a href='https://webpages.uncc.edu/dadams67/itis3135/calculator_try.html'>Calculator</a>
+                    <a href='https://webpages.uncc.edu/dadams67/itis3135/arrays.html'>Arrays</a>
                     ||
                     <a href='https://webpages.uncc.edu/dadams67/itis3135/project-design.html'>Project Design</a>
-                    ||
-                    <a href='https://webpages.uncc.edu/dadams67/itis3135/slideshow.html'>Slideshow</a>
                 </p>
             </div>
 
@@ -54,58 +53,27 @@
         <!-- Main content -->
         <main>
 
-            <br/> 
+            <h2>Slideshow - Click Prev. and Next to navigate</h2>
+            <p>All photos taken by Dylan Adams</p>
+            
+            <div class='slideshow' id='slideshow'>
 
-            <form>
+                <div id='picholder'>
+                    <img src='images/slideshow/charlotte.jpg' id='slideshow-img' alt='Charlotte'>
+                </div>
+                <br>
+                <p>
+                    <a id='prev'>Prev.</a>
+                    <a id='next'>Next</a>
+                </p>
 
-                <label class='textLabel' for='name'>
-                    Person's Name: 
-                    <input autocomplete='off' class='field' type='text' id='name' value='' placeholder="Person's Name">
-                </label>
-                <br/>
+                
 
-                <label class='textLabel' for='salary'>
-                    Person's Salary: 
-                    <input autocomplete='off' class='field' type='number' id='salary' value='' placeholder="Person's Salary">
-                </label>
-                <br/>
-
-            </form>
-
-            <div class='arrays-main'>
-                <button class='arrays-button' onclick='validateInput()'>Add Salary</button>
-                <button class='arrays-button' onclick='displayResults()'>Display Results</button>
-                <button class='arrays-button' onclick='displaySalary()'>Display Salary</button>
             </div>
-
-            <br/>
-
-            <h2>Highest and Average Salary: </h2>
-            <p id='results'>Click "Display Results" above to see the highest and average salary.</p>
-
-            <table class='complex' id='results_table'>
-                <tr>
-                    <th>Person</th>
-                    <th>Salary</th>
-                </tr>
-
-            </table>
-
-            <br/>
-
-            <h2>Select specific person: </h2>
-            <p>Choose a person below to see how much their salary is, or add someone by clicking "Add Salary".</p>
-            <form>
-                <select onchange='personSelectChange()' id='person_select'>
-                    <option value='select' disabled selected>-- Add a Person and Salary above --</option>
-                </select>
-            </form>
-
-            <p id='person_select_salary'></p>
 
         </main>
 
-        <br/><br/>
+        <br/><br/><br/>
 
         <!-- Footer of the page -->
         <footer>
