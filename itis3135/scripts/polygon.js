@@ -64,7 +64,8 @@ function getShape() {
     }
 
     /* Tells the user the name of their polygon through an alert and a paragraph element. */
-    alert("Your polygon's name is: " + result)
+    //alert("Your polygon's name is: " + result)
+    dalert.alert("Your polygon's name is: " + result);
     document.getElementById('polygon-result').innerHTML = "Your polygon's name is: " + result
     
 }
@@ -82,7 +83,7 @@ function validateEntry(inputNum){
         }
         else 
         {
-            alert('Please enter a correct number.')
+            dalert.alert('Please enter a correct number.')
             return false;
         }
         

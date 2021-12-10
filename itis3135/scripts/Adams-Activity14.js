@@ -20,7 +20,7 @@ $(document).ready(function() {
                 $.each(data.speakers, function(key, element){
                     
                     $('main').append(
-                        "<h1>" + element.title + "</h3>" + 
+                        "<h1>" + element.title + "</h1>" + 
                         "<h2>" + element.month + "</h2>" +    
                         "<h3>" + element.speaker + "</h3>" +
                         "<img src='images/Activity_14/" + title + ".jpg' alt = '" + this.title + "_picture'>" +

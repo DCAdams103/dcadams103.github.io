@@ -7,6 +7,10 @@
 
         <link rel='stylesheet' href='styles/default.css'>
 
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="scripts/jquery.tabledit.js"></script>
+
+
         <!-- Title of the page aka what shows up in the tab -->
         <title> Dylan Adams ITIS 3135 Tables </title>
         
@@ -221,6 +225,20 @@
             <figcaption>Information about each Hidden Leaf Hokage. Hokage don't really have a salary.</figcaption>
 
         </figure>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#simple').Tabledit({
+                    editButton: false,
+                    removeButton: false,
+                    columns: {
+                        identifier: [0,'id'],  
+                        editable: [[1,'Name'], [2,'Email'], [3, 'Estimated Service in Years']]
+                    }
+                });
+
+            });
+        </script>
 
         <!-- Footer of the page -->
         <footer>

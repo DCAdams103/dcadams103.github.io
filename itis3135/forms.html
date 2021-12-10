@@ -7,6 +7,14 @@
         <!-- Imports tables.css to allow us to use it's styles -->
         <link rel='stylesheet' href='styles/default.css'>
 
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+        <!-- Imports to use fancyfield jQuery plugin -->
+        <script src="scripts/fancyfields-1.2.min.js" type="text/javascript"></script>
+        <link href="styles/fancyfields.css" rel="stylesheet" type="text/css" />
+        <script src="scripts/fancyfields.csb.min.js" type="text/javascript"></script>
+
         <!-- Title of the page aka what shows up in the tab -->
         <title> Dylan Adams ITIS 3135 Forms </title>
         
@@ -56,7 +64,7 @@
             <div class='container'>
     
                 <!-- Form element that has all labels and inputs inside it. -->
-                <form class='form' action='#'>
+                <form id='form' class='form' action='#'>
     
                     <!-- Textbox Inputs -->
                     <div>
@@ -77,7 +85,7 @@
                         
                         <label class='textLabel'>
                             Enter your phone number:
-                            <input class='field' type='number' placeholder='Phone Number' />
+                            <input id='telephone' class='field' type='tel' placeholder='Phone Number' />
                         </label>
                         
                     </div>
@@ -136,6 +144,12 @@
     
             </div>
         </main>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".form").fancyfields();
+            });
+        </script>
 
         <!-- Footer of the page -->
         <footer>
